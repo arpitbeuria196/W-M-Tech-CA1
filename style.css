@@ -1,0 +1,38 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+
+nav {
+    display: flex;
+    color: white;
+    background-color: rgb(206, 170, 170);
+    padding: 12px 3px;
+    justify-content: space-between;
+}
+ul {
+    display: flex;
+    margin: 0 23px;
+}
+
+ul li {
+    list-style: none;
+    margin: 0 13px;
+}
+
+.logo{
+    margin: 0 23px;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.tab-image{
+    height: 300px;
+    width: 300px;
+
+}
+.coffee-tabs{
+    padding: 0px 100px;
+    margin: 0px 10px;
+}
