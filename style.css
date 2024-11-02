@@ -1,8 +1,74 @@
-/* * {
+
+* {
     margin: 0;
     padding: 0;
-} */
+}
 
+header {
+    background-color: rgb(206, 170, 170); 
+    padding: 20px; 
+    text-align: center; 
+}
+
+header h1 {
+    font-size: 24px; 
+    color: white; 
+    margin-bottom: 10px; 
+}
+
+#coffeeList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.property-card {
+    flex: 1 1 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.property-card img {
+    width: 300px;
+    height: 200px;
+    border-radius: 4px;
+}
+.property-card h2{
+    font-size: 20px;
+    padding: 4px;
+    font-style: italic;
+}
+
+.property-card button {
+    background-color: rgb(206, 170, 170);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.property-card button:hover {
+    background-color: rgb(223, 107, 107);
+}
+
+@media (max-width: 760px) {
+    #coffeeList {
+        justify-content: center;
+    }
+    .property-card {
+        flex: 1 1 100%; 
+        margin: 10px 0;
+    }
+    .property-card h2 {
+        font-size: 18px; 
+    }
+}
 
 nav {
     display: flex;
@@ -10,29 +76,185 @@ nav {
     background-color: rgb(206, 170, 170);
     padding: 12px 3px;
     justify-content: space-between;
+    align-items: center; 
 }
+
 ul {
-    display: flex;
-    margin: 0 23px;
+    display: flex; 
+    list-style: none; 
+    
 }
 
 ul li {
-    list-style: none;
-    margin: 0 13px;
+    margin: 0 15px;
 }
 
-.logo{
+ul li a {
+    color: white;
+    text-decoration: none; 
+}
+
+ul li a:hover {
+    text-decoration: underline; 
+}
+
+
+.logo {
     margin: 0 23px;
     font-weight: 800;
     font-size: 25px;
 }
 
-.tab-image{
-    height: 300px;
-    width: 300px;
-
+.search-container {
+    margin: 10px;
 }
-.coffee-tabs{
-    padding: 0px 100px;
-    margin: 0px 10px;
+
+.search-bar {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+}
+#searchButton
+{
+    padding: 10px;
+    background-color: rgb(206, 170, 170);
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 60px;
+}
+
+@media (max-width: 760px) {
+    .search-bar {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    nav {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+        align-items: center;
+    }
+
+    ul li {
+        list-style: none;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 1024px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    ul {
+        display: flex; 
+    }
+
+    ul li {
+        margin: 0 15px;
+    }
+
+    .search-bar {
+        width: 200px;
+    }
+}
+
+@media (min-width: 1025px) {
+    nav {
+        flex-direction: row; 
+    }
+
+    ul li {
+        margin: 0 20px;
+    }
+
+    .search-bar {
+        width: 300px;
+    }
+}
+
+/*Details*/
+
+#coffeeDetails {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px;
+}
+
+.coffeeDetail {
+    background-color: white; 
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%; 
+    max-width: 600px;
+    margin-bottom: 20px; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.coffeeDetail img {
+    width: 100%;
+    border-radius: 5px; 
+}
+
+.coffeeDetail h2 {
+    font-size: 30px;
+    padding: 4px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.coffeeDetail p {
+    padding: 3px;
+    font-style: italic;
+}
+
+.coffeeDetail button {
+    width: 100%;
+    background-color: rgb(206, 170, 170);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-top: 10px; 
+    text-align: center;
+    color: azure;
+    font-weight: bold;
+}
+
+.label {
+    font-weight: bold; 
+    color: black;      
+}
+
+.value {
+    color: #efa00c;      
+}
+
+.other-media {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin-top: 10px;
+    padding: 4px;
+}
+/*Footer*/
+
+footer {
+    background-color: rgb(206, 170, 170); 
+    color: white; 
+    padding: 20px;
+    text-align: center; 
+    width: 100%;
 }

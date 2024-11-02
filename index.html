@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Coffeee Shopiee</title>
+	<title>Coffee Shopiee</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,82 +15,32 @@
 		<nav>
 			<div class="logo">Coffee Shopiee</div>
 			<ul>
-				<li>Home</li>
-				<li>About</li>
-				<li>Contact</li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
+	<!--Body-->
+	
+	<div class="search-container">
+		<input type="text" class="search-bar" id="searchBar" placeholder="Search for a coffee..." >
+		<button id="searchButton">Search</button>
+	</div>
 
-	<!-- Hero Section -->
-	<section class="hero">
-		<div class="background-image"> <!-- Add background image or video here --> </div>
-		<h1>Welcome to Our Coffee Shop</h1>
+	<section id="coffeeList">
 	</section>
-
-	<!-- Introduction Section -->
-	<section class="intro">
-		<h2>About Us</h2>
-		<p>Brief text about the coffee shop</p>
-	</section>
-
-	<!-- Featured Coffees Section -->
-	<section class="featured-coffees">
-		<h2>Featured Coffees</h2>
-		<div class="coffee-tabs">
-			<button class="tab" onclick="openTab('tab1', tab1.html)"><a href="tab1.html"><img src="https://halfmoonyoga.ie/wp-content/uploads/2023/11/Colombia.png" alt="tab1 image" class="tab-image"></a></button>
-			<button class="tab" onclick="openTab('tab2')"><a href="tab2.html"><img src="https://badgeranddodo.ie/wp-content/uploads/2021/09/IMG-3726-2048x1536.jpg" alt="" class="tab-image"></a></button>
-			<button class="tab" onclick="openTab('tab3')"><a href="tab3.html"><img src="https://halfmoonyoga.ie/wp-content/uploads/2023/11/Colombia.png" alt="tab3 image" class="tab-image"></a></a></button>
-			<button class="tab" onclick="openTab('tab4')"><a href="tab4.html"><img src="https://badgeranddodo.ie/wp-content/uploads/2021/09/IMG-3726-2048x1536.jpg" alt="" class="tab-image"></a></button>
-			<button class="tab" onclick="openTab('tab5')"><a href="tab5.html"><img src="https://halfmoonyoga.ie/wp-content/uploads/2023/11/Colombia.png" alt="tab5 image" class="tab-image"></a></a></button>
-			<button class="tab" onclick="openTab('tab6')"><a href="tab6.html"><img src="https://badgeranddodo.ie/wp-content/uploads/2021/09/IMG-3726-2048x1536.jpg" alt="" class="tab-image"></a></button>
-			<button class="tab" onclick="openTab('tab7')"><a href="tab7.html"><img src="https://halfmoonyoga.ie/wp-content/uploads/2023/11/Colombia.png" alt="tab7 image" class="tab-image"></a></a></button>
-			<button class="tab" onclick="openTab('tab8')"><a href="tab8.html"><img src="https://badgeranddodo.ie/wp-content/uploads/2021/09/IMG-3726-2048x1536.jpg" alt="" class="tab-image"></a></button>
-		</div>
-		<div id="tab1" class="tab-content">
-			<!-- Content for Studio Coffee tab -->
-			 
-		</div>
-		<div id="tab2" class="tab-content">
-			<!-- Content for Badger & Dodo tab -->
-		</div>
-		<div id="tab3" class="tab-content">
-			<!-- Content for Studio Coffee tab -->
-		</div>
-		<div id="tab4" class="tab-content">
-			<!-- Content for Badger & Dodo tab -->
-		</div>
-		<div id="tab5" class="tab-content">
-			<!-- Content for Studio Coffee tab -->
-		</div>
-		<div id="tab6" class="tab-content">
-			<!-- Content for Badger & Dodo tab -->
-		</div>
-		<div id="tab7" class="tab-content">
-			<!-- Content for Studio Coffee tab -->
-		</div>
-		<div id="tab8" class="tab-content">
-			<!-- Content for Badger & Dodo tab -->
-		</div>
-	</section>
-
-	<!-- Call-to-Action Section
-	<section class="cta">
-		<button>Explore More Coffees</button>
-	</section> -->
-
+	
 	<!-- Footer -->
 	<footer>
 		<div class="contact-info">
-			<p>Address</p>
-			<p>Phone Number</p>
-			<p>Email</p>
-		</div>
-		<div class="social-media">
-			<!-- Add social media links here -->
+			<p>Address: Dublin2</p>
+			<p>Phone Number: +353 123456789 </p>
+			<p>Email: arpit@coffeeshopiee.com</p>
 		</div>
 	</footer>
 
+	<script src="script.js"></script>
 </body>
 
 </html>
