@@ -208,34 +208,72 @@ function displayCoffees(products) {
         const card = document.createElement('div');
         card.classList.add('property-card');
 
+        // Caffeine Tag
+        const caffeineTag = document.createElement('div');
+        caffeineTag.classList.add('caffeine-tag');
+        caffeineTag.textContent = product.caffinated === "yes" ? 'Caffeinated' : 'Non-Caffeinated';
+        card.appendChild(caffeineTag);
+
         // Image
         const img = document.createElement('img');
         img.src = product.featuredMedia;
         img.alt = product.name;
         card.appendChild(img);
 
+        // Title and Button Container
+        const titleContainer = document.createElement('div');
+        titleContainer.classList.add('title-container');
+
         // Title
         const title = document.createElement('h2');
         title.textContent = product.name;
-        card.appendChild(title);
+        title.classList.add('coffee-title');
+        titleContainer.appendChild(title);
 
         // Button
         const button = document.createElement('button');
         button.textContent = 'More Details';
+        button.classList.add('more-details-button'); 
         
         // Button Function
         button.onclick = () => viewProducts(product.id);
-        card.appendChild(button);
+        titleContainer.appendChild(button); 
 
+        card.appendChild(titleContainer);
+
+        // Details
+        const detailsContainer = document.createElement('div');
+        detailsContainer.classList.add('coffee-details'); 
+
+        // Origin
+        const origin = document.createElement('p');
+        origin.textContent = `Origin: ${product.origin}`;
+        detailsContainer.appendChild(origin);
+
+        // Roasted In
+        const roastedIn = document.createElement('p');
+        roastedIn.textContent = `Roasted In: ${product.roastedIn}`;
+        detailsContainer.appendChild(roastedIn);
+
+        // Type
+        const type = document.createElement('p');
+        type.textContent = `Type: ${product.type}`;
+        detailsContainer.appendChild(type);
+
+        card.appendChild(detailsContainer);
         coffeeList.appendChild(card);
     });
 }
+
+
+
+
 
 function viewProducts(id) {
     const selectedProperty = products.find((p) => p.id == id);
     console.log("Selected Property:", selectedProperty);
     localStorage.setItem('selectedProperty', JSON.stringify(selectedProperty));
-    window.location.href = 'coffeeDetailsPage/property.html';
+    window.location.href = 'property.html';
 }
 
 

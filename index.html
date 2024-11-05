@@ -2,45 +2,55 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Coffee Shopiee</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shopiee</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-	<!-- Header -->
+    <!-- Header -->
 	<header>
-		<nav>
-			<div class="logo">Coffee Shopiee</div>
-			<ul>
+		<nav class="navbar">
+			<div class="logo">
+				<img src="https://img.freepik.com/premium-vector/coffee-shop-vintage-logo_807399-142.jpg" alt="Coffee Shopiee Logo" />
+			</div>
+			<div class="name">Coffee Shopiee</div>
+			<ul class="nav-links">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
-	<!--Body-->
 	
-	<div class="search-container">
-		<input type="text" class="search-bar" id="searchBar" placeholder="Search for a coffee..." >
-		<button id="searchButton">Search</button>
-	</div>
 
-	<section id="coffeeList">
-	</section>
-	
-	<!-- Footer -->
-	<footer>
-		<div class="contact-info">
-			<p>Address: Dublin2</p>
-			<p>Phone Number: +353 123456789 </p>
-			<p>Email: arpit@coffeeshopiee.com</p>
-		</div>
-	</footer>
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" class="search-bar" id="searchBar" placeholder="Search for a coffee...">
+        <button id="searchButton">Search</button>
+    </div>
 
-	<script src="./homePage/script.js"></script>
+    <!-- Coffee List Section -->
+    <section id="coffeeList" class="coffee-list"></section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Address: Dublin 2</p>
+                <p>Phone Number: +353 123456789</p>
+                <p>Email: arpit@coffeeshopiee.com</p>
+            </div>
+            <div class="footer-logo">Coffee Shopiee</div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Coffee Shopiee. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
